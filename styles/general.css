@@ -32,7 +32,7 @@ a:hover{
 }
 .site-btn:hover{
     background-color: #F6D375;
-    border: unset;
+    border: 1px solid #F6D375;
 }
 .site-logo:hover{
     color: unset;

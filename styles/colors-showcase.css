@@ -1,0 +1,31 @@
+.colors-showcase{
+    padding: 160px 0;
+    background: linear-gradient(90deg, #BABABA 0%, #F3F3F3 100%);
+}
+.colors-note{
+    width: 360px;
+    margin-left: auto;
+    color: #48494F;
+    font-size: 14px;
+}
+.colors-img{
+    display: block;
+    margin: 0 auto;
+}
+.colors_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 30px;
+    width: fit-content;
+    color: #18181B;
+}
+.colors_list button{
+    opacity: 0.5;
+    width: 200px;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: left;
+}
+.colors_list button.active{
+    opacity: 1;
+}

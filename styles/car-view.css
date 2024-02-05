@@ -1,0 +1,8 @@
+.car-view{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/car-view-bg.png);
+    background-position: center;
+}

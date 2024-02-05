@@ -1,0 +1,42 @@
+.side-slider .container{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.side-slider_description{
+    width: 490px;
+}
+.side-slider_control{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.side-slider_next-btn img{
+    rotate: 180deg;
+}
+.side-slider_img{
+    position: relative;
+}
+.side-slider_img::before, .side-slider_img::after{
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+}
+.side-slider_img::before{
+    width: 33.3%;
+    background-color: #F6D375;
+    z-index: 2;
+}
+.side-slider_img::after{
+    width: 100%;
+    background-color: #48494F;
+}
+
+.control-section .container{
+    flex-direction: row-reverse;
+}

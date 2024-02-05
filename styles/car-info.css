@@ -5,6 +5,7 @@
     position: sticky;
     top: 0;
     background-color: #18181B;
+    z-index: 10;
 }
 .car-info_top .container{
     display: flex;
