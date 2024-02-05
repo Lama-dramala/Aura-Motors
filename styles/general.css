@@ -1,0 +1,40 @@
+/* Шрифты */
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf");
+}
+/* Общие стили */
+html{
+    font-family: "Montserrat";
+    color: white;
+    font-size: 18px;
+}
+.container{
+    max-width: 1530px;
+    margin: 0 auto;
+}
+.site-btn{
+    padding: 13px 64px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #18181B;
+    background-color: #fff;
+    border: 1px solid white;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+/* Ховеры */
+a{
+    transition: 0.5s;
+}
+a:hover{
+    color: #F6D375;
+}
+.site-btn:hover{
+    background-color: #F6D375;
+    border: unset;
+}
+.site-logo:hover{
+    color: unset;
+    text-decoration: none;
+}

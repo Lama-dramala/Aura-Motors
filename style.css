@@ -1,0 +1,11 @@
+/* Основные стили */
+@import url(styles/basic-reset.css);
+@import url(styles/general.css);
+
+/* Стили секций */
+@import url(styles/header.css);
+@import url(styles/car-presentation.css);
+@import url(styles/car-info.css);
+
+@import url(styles/bottom-links.css);
+@import url(styles/footer.css);

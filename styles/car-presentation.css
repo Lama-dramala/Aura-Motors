@@ -1,0 +1,31 @@
+.car-presentation{
+    height: 900px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 60px;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(../img/car-bg-1.png);
+    background-position: center;
+}
+.car-presentation::after{
+    content: "";
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(24, 24, 27, 0) 0%, #18181B 100%);
+
+}
+.car-presentation .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    font-size: 50px;
+    z-index: 2;
+}
+.car-presentation h1{
+    font-size: 64px;
+    font-weight: normal;
+}

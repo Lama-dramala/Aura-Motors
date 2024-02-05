@@ -1,0 +1,24 @@
+.footer{
+    background-color: #0F0F0F;
+    padding: 60px;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .site-logo{
+    font-size: 32px;
+}
+.footer_links{
+    display: flex;
+}
+.footer_links li{
+    margin-right: 40px;
+    font-size: 14px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.footer_links li:hover{
+    opacity: 1;
+}
