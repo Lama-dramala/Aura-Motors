@@ -28,21 +28,23 @@
 .social-links{
     width: 420px;
 }
-.social-links ul{
+.social-links_list{
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
-.social-links li{
+.social-links_list li{
     margin-right: 30px;
 }
-.social-links li:last-child{
+.social-links_list li:last-child{
     margin-right: 0;
 }
-.social-links li img{    
-    transition: 0.5s;
+.social-links_list li img:last-child{
+    display: none;
 }
-.social-links li img:hover{
-    background-color: #F6D375;
-    border-radius: 5px;
+.social-links_list li:hover img:first-child{
+    display: none;
+}
+.social-links_list li:hover img:last-child{
+    display: block;
 }

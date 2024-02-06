@@ -12,6 +12,7 @@ html{
 .container{
     max-width: 1530px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 .site-btn{
     padding: 13px 64px;
@@ -30,11 +31,23 @@ a{
 a:hover{
     color: #F6D375;
 }
+a:focus{
+    color: #BFAA70;
+}
 .site-btn:hover{
     background-color: #F6D375;
     border: 1px solid #F6D375;
 }
-.site-logo:hover{
+.site-btn:focus{
+    background-color: #BFAA70;
+    border: 1px solid #BFAA70;
+}
+.site-logo:hover, .site-logo:focus{
     color: unset;
     text-decoration: none;
+}
+@media (max-width:700px){
+    .container{
+        padding: 0 15px;
+    }
 }

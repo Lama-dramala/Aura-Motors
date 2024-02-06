@@ -2,6 +2,7 @@
     background-color: #18181B;
 }
 .car-info_top{
+    padding: 30px 0;
     position: sticky;
     top: 0;
     background-color: #18181B;
@@ -11,7 +12,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
 }
 .car-info-tabs{
     display: flex;
@@ -21,7 +21,7 @@
     font-size: 20px;
     transition: 0.5s;
 }
-.car-info-tabs li:last-child{
+.car-info-tabs li:last-child button{
     margin-right: 0;
 }
 .car-info-tabs li button.active{
@@ -31,12 +31,15 @@
 .car-info-tabs li button:hover{
     color: #F6D375;
 }
+.car-info-tabs li button:focus{
+    color: #BFAA70;
+}
 .car-info_credit-btn{
     background-color: unset;
     color: white;
     margin-left: 10px;
 }
-.car-info_credit-btn:hover{
+.car-info_credit-btn:hover, .car-info_credit-btn:focus{
     color: #18181B;
 }
 .car-info_content{
@@ -126,4 +129,133 @@
 }
 .car-info_expand-btn:hover::after{
     top: 20px;
+}
+@media (max-width:1600px){
+    .car-info_table_row span{
+        width: 170px;
+    }
+}
+@media (max-width:1420px){
+    .car-info_top{
+        background-color: black;
+    }
+    .car-info_top .container::after{
+        content: "";
+        width: 25%;
+        height: 3px;
+        background-color: #F6D375;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .car-info-tabs li button{
+        display: none;
+    }
+    .car-info-tabs li button.active{
+        display: inline-block;
+        text-decoration: none;
+    }
+    .car-info-tabs li button.active::after{
+        content: url(../img/yellow-arrow.svg);
+        width: 14px;
+        height: 7px;
+        margin-left: 15px;
+    }
+    .car-info_content{
+        padding: 60px 0;
+    }
+    .car-info_content_top{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .car-info_characteristics{
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:1150px){
+    .characteristic_big{
+        font-size: 35px;
+    }
+    .car-info_tables{
+        flex-direction: column;
+        align-items: center;
+    }
+    .complectation-table{
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:900px){
+    .car-info_top_buttons{
+        display: none;
+    }
+}
+@media (max-width:750px){
+    .car-info_content_top{
+        margin-bottom: 30px;
+    }
+    .car-info_characteristics{
+        margin-bottom: 30px;
+    }
+    .characteristics-item{
+        padding-right: 25px;
+        margin-right: 25px;
+    }
+    .characteristic_big{
+        font-size: 24px;
+        font-weight: 500px;
+    }
+    .car-info_description h4{
+        display: none;
+    }
+    .complectation-table{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:560px){
+    .car-info_top{
+        padding: 15px 0;
+        top: 60px;
+    }
+    .car-info-tabs li button{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .car-info_content_top{
+        align-items: start;
+    }
+    .characteristics-item{
+        padding-right: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .characteristic_big{
+        font-size: 18px;
+        font-weight: 500px;
+    }
+    .car-info_description{
+        width: 330px;
+    }
+    .car-info_tables{
+        align-items: start;
+    }
+    .car-info_tables h4{
+        font-size: 26px;
+    }
+    .car-info_table_row{
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .car-info_table_row span:first-child{
+        margin-right: 25px;
+    }
+    .car-info_table_row span:last-child{
+        text-align: end;
+    }
+    .complectation-table_price{
+        display: none !important;
+    }
 }

@@ -13,13 +13,22 @@
             <div class="header_top">
                 <a href="#" class="site-logo">Aura Motors</a>
                 <div class="header_info_right">
-                    <div class="header_info">
-                        <a href="#">Місто: Київ - Центр</a>
-                        <a href="tel:0 800 320 555">0 800 320 555</a>
-                        <a href="#">Зв'язатися з нами</a>
-                    </div>
+                    <ul class="header_info">
+                        <li>
+                            <a href="#">Місто: Київ - Центр</a>
+                        </li>
+                        <li>
+                            <span>
+                                <a href="tel:0 800 320 555">0 800 320 555</a>
+                                <button><img src="img/arrow.svg" alt=""></button>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">Зв'язатися з нами</a>
+                        </li>
+                    </ul>
                     <div class="header_functional">
-                        <button>
+                        <button class="header_lang-btn">
                             <img src="img/ua-flag.svg" alt="Change lang">
                         </button>
                         <button>
@@ -28,9 +37,16 @@
                         <button>
                             <img src="img/scales-icon.svg" alt="Bargain">
                         </button>
+                        <button class="header_menu-btn">
+                            <div class="header_menu-icon"></div>
+                        </button>
                     </div>
                 </div>
             </div>
+        </div>
+    </header> 
+    <div class="breadcrumbs-wrap">
+        <div class="container">
             <nav class="breadcrumbs">
                 <ul>
                     <li>
@@ -48,7 +64,7 @@
                 </ul>
             </nav>
         </div>
-    </header> 
+    </div>
     <section class="car-presentation">
         <div class="container">
             <h1>GENESIS G80</h1>
@@ -71,7 +87,7 @@
                     <button>Галерея</button>
                 </li>
             </ul>
-            <div>
+            <div class="car-info_top_buttons">
                 <button class="site-btn">Замовити</button>
                 <button class="site-btn car-info_credit-btn">Від 14 077 грн/міс</button>
             </div>
@@ -109,16 +125,16 @@
                     </div>
                 </div>
                 <div class="car-info_tables">
-                    <div>
+                    <div class="complectation-table">
                         <h4>Комплектації</h4>
                         <div class="car-info_table_row">
                             <span>Deluxe</span>
-                            <span>від 1 067 175 грн</span>
+                            <span class="complectation-table_price">від 1 067 175 грн</span>
                             <span>від $57 500</span>
                         </div>
                         <div class="car-info_table_row">
                             <span>Ultimate</span>
-                            <span>від 1 067 175 грн</span>
+                            <span class="complectation-table_price">від 1 067 175 грн</span>
                             <span>від $67 900</span>
                         </div>
                     </div>
@@ -147,7 +163,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <!-- <section class="gallery">
         <div class="container">
             <div class="gallery_control">
                 <button id="gallery_prev-btn">
@@ -165,7 +181,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="colors-showcase">
         <div class="container">
             <div class="colors-note">
@@ -194,7 +210,7 @@
             </ul>
         </div>
     </section>
-    <section class="side-slider functions-section">
+    <!-- <section class="side-slider functions-section">
         <div class="container">
             <div class="side-slider_description">
                 Функція <b>Shift-By-Wire</b> дозволяє перемикати передачі простим поворотом циферблата. Елегантний прозорий поворотний циферблат, оздоблений дорогоцінними каменями, забезпечує інтуїтивно зрозуміле керування.
@@ -237,6 +253,229 @@
         </div>
     </section>
     <section class="car-video"></section>
+    <section class="car-selection">
+        <div class="container">
+            <h2>В наявності GENESIS G80</h2>
+            <ul class="car-list">
+                <li class="car-list_item">
+                    <div class="car-list_item-title">
+                        <img src="img/brand-icon.svg" alt="brand icon">
+                        <span><b>GENESIS</b> / Deluxe</span>
+                    </div>
+                    <div>2023</div>
+                    <div class="car-list_color silver"></div>
+                    <b class="car-list_price-1">$57 500</b>
+                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_city">Київ</div>
+                    <button class="car-list_fav-btn">
+                        <img src="img/bookmark-icon.svg" alt="Add to Favorite">
+                        <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
+                    </button>
+                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a href="#" class="car-list_link">Детальніше</a>
+                </li>
+                <li class="car-list_item">
+                    <div class="car-list_item-title">
+                        <img src="img/brand-icon.svg" alt="brand icon">
+                        <span><b>GENESIS</b> / Deluxe</span>
+                    </div>
+                    <div>2023</div>
+                    <div class="car-list_color black"></div>
+                    <b class="car-list_price-1">$57 500</b>
+                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_city">Дніпро</div>
+                    <button class="car-list_fav-btn">
+                        <img src="img/bookmark-icon.svg" alt="Add to Favorite">
+                        <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
+                    </button>
+                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a href="#" class="car-list_link">Детальніше</a>
+                </li>
+                <li class="car-list_item">
+                    <div class="car-list_item-title">
+                        <img src="img/brand-icon.svg" alt="brand icon">
+                        <span><b>GENESIS</b> / Deluxe</span>
+                    </div>
+                    <div>2023</div>
+                    <div class="car-list_color black"></div>
+                    <b class="car-list_price-1">$57 500</b>
+                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_city">Дніпро</div>
+                    <button class="car-list_fav-btn">
+                        <img src="img/bookmark-icon.svg" alt="Add to Favorite">
+                        <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
+                    </button>
+                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a href="#" class="car-list_link">Детальніше</a>
+                </li>
+                <li class="car-list_item">
+                    <div class="car-list_item-title">
+                        <img src="img/brand-icon.svg" alt="brand icon">
+                        <span><b>GENESIS</b> / Deluxe</span>
+                    </div>
+                    <div>2023</div>
+                    <div class="car-list_color black"></div>
+                    <b class="car-list_price-1">$57 500</b>
+                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_city">Дніпро</div>
+                    <button class="car-list_fav-btn">
+                        <img src="img/bookmark-icon.svg" alt="Add to Favorite">
+                        <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
+                    </button>
+                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a href="#" class="car-list_link">Детальніше</a>
+                </li>
+                <li class="car-list_item">
+                    <div class="car-list_item-title">
+                        <img src="img/brand-icon.svg" alt="brand icon">
+                        <span><b>GENESIS</b> / Ultimate</span>
+                    </div>
+                    <div>2023</div>
+                    <div class="car-list_color red"></div>
+                    <b class="car-list_price-1">$67 900</b>
+                    <div class="car-list_price-2">2 637 915 грн</div>
+                    <div class="car-list_city">Полтава</div>
+                    <button class="car-list_fav-btn">
+                        <img src="img/bookmark-icon.svg" alt="Add to Favorite">
+                        <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
+                    </button>
+                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a href="#" class="car-list_link">Детальніше</a>
+                </li>
+                <li class="car-list_item">
+                    <div class="car-list_item-title">
+                        <img src="img/brand-icon.svg" alt="brand icon">
+                        <span><b>GENESIS</b> / Ultimate</span>
+                    </div>
+                    <div>2023</div>
+                    <div class="car-list_color silver"></div>
+                    <b class="car-list_price-1">$67 900</b>
+                    <div class="car-list_price-2">2 637 915 грн</div>
+                    <div class="car-list_city">Київ</div>
+                    <button class="car-list_fav-btn">
+                        <img src="img/bookmark-icon.svg" alt="Add to Favorite">
+                        <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
+                    </button>
+                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a href="#" class="car-list_link">Детальніше</a>
+                </li>
+                <li class="car-list_item">
+                    <div class="car-list_item-title">
+                        <img src="img/brand-icon.svg" alt="brand icon">
+                        <span><b>GENESIS</b> / Ultimate</span>
+                    </div>
+                    <div>2023</div>
+                    <div class="car-list_color yellow"></div>
+                    <b class="car-list_price-1">$67 900</b>
+                    <div class="car-list_price-2">2 637 915 грн</div>
+                    <div class="car-list_city">Київ</div>
+                    <button class="car-list_fav-btn">
+                        <img src="img/bookmark-icon.svg" alt="Add to Favorite">
+                        <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
+                    </button>
+                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a href="#" class="car-list_link">Детальніше</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-section_top">
+                <h2>Зв'язатися з нами</h2>
+                <div class="form-section_note-1">
+                    Якщо у вас виникли питання чи потрібна додаткова інформація, будь ласка, зв'яжіться з нами. Наша команда експертів готова надати всю необхідну підтримку та поради
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="text-input_wrap">
+                    <input type="text" placeholder="Им’я" name="Name">
+                    <input type="text" placeholder="Номер телефону" name="Phone number">
+                </div>                
+                <input type="text" placeholder="Повідомлення" name="Message">
+                <div class="checkbox-wrap">
+                    <span>Мені зручно:</span>
+                    <div class="checkbox_item">
+                        <label>
+                            <input type="checkbox" name="phone" checked> 
+                            <span class="label">Телефоном</span>
+                        </label>
+                    </div>
+                    <div class="checkbox_item">
+                        <label>
+                            <input type="checkbox" name="E-mail"> 
+                            <span class="label">E-mail</span>
+                        </label>
+                    </div>
+                    <div class="checkbox_item">
+                        <label>
+                            <input type="checkbox" name="Viber"> 
+                            <span class="label">Viber</span>
+                        </label>
+                    </div>
+                    <div class="checkbox_item">
+                        <label>
+                            <input type="checkbox" name="Telegram" checked> 
+                            <span class="label">Telegram</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="submit-wrap">
+                    <input type="submit" value="Відправити" class="site-btn">
+                    <div class="form-section_note-2">
+                        Натискаючи "Відправити" ви підтверджуєте свою згоду на обробку персональних даних
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="our-contacts">
+        <div class="container">
+            <div class="contacts-top">
+                <h2>Наші контакти</h2>
+                <a href="#" class="contacts_show-all">Всі міста та контакти</a>
+            </div>
+            <div class="contacts-bottom">
+                <div class="contacts_list">
+                    <a href="tel:0 800 999 999" class="contacts_main-links">0 800 999 999</a>
+                    <a href="mailto:@auramotors.com" class="contacts_main-links">mail@auramotors.com</a>
+                    <ul class="social-links_list">
+                        <li>
+                            <a href="#">
+                                <img src="img/social/facebook-icon.svg" alt="facebook">
+                                <img src="img/social/facebook-icon-2.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/social/Inst-icon.svg" alt="instagram">
+                                <img src="img/social/Inst-icon-2.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/social/tg-icon.svg" alt="telegram">
+                                <img src="img/social/tg-icon-2.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/social/tik-tok-icon.svg" alt="tik-tok">
+                                <img src="img/social/tik-tok-icon-2.svg" alt="tik-tok">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/social/youtube-icon.svg" alt="youtube">
+                                <img src="img/social/youtube-icon-2.svg" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="img/ukraine-map.png" alt="shops map">
+            </div>
+        </div>
+    </section>  
     <section class="bottom-links">
         <div class="container">
             <div class="site-links">
@@ -296,30 +535,35 @@
                 <span>
                     Працюємо з 2021 – Aura Motors – made for future. Всі права захищені.
                 </span>
-                <ul>
+                <ul class="social-links_list">
                     <li>
                         <a href="#">
                             <img src="img/social/facebook-icon.svg" alt="facebook">
+                            <img src="img/social/facebook-icon-2.svg" alt="facebook">
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/social/Inst-icon.svg" alt="instagram">
+                            <img src="img/social/Inst-icon-2.svg" alt="instagram">
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/social/tg-icon.svg" alt="telegram">
+                            <img src="img/social/tg-icon-2.svg" alt="telegram">
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/social/tik-tok-icon.svg" alt="tik-tok">
+                            <img src="img/social/tik-tok-icon-2.svg" alt="tik-tok">
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/social/youtube-icon.svg" alt="youtube">
+                            <img src="img/social/youtube-icon-2.svg" alt="youtube">
                         </a>
                     </li>
                 </ul>
@@ -347,6 +591,6 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
