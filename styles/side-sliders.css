@@ -1,12 +1,22 @@
-.side-slider .container{
+.side-slider{
     padding: 60px 0;
+    color: black;
+}
+.side-slider .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
 }
-.side-slider_description{
+.side-slider-1, .side-slider-2{
+    margin: 0;
+}
+.side-slider-1{
     width: 490px;
+    height: 110px;
+}
+.side-slider .swiper-slide-active{
+    display: flex;
+    align-items: center;
 }
 .side-slider_control{
     height: 170px;
@@ -14,29 +24,67 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.side-slider_next-btn img{
+.side-slider_prev, .side-slider_next{
+    cursor: pointer;
+}
+.side-slider_next{
     rotate: 180deg;
 }
-.side-slider_img{
-    position: relative;
+.side-slider-2{
+    width: 750px;
+    height: 1005px;
 }
-.side-slider_img::before, .side-slider_img::after{
-    content: "";
-    display: block;
-    height: 5px;
-    position: absolute;
-    bottom: 0;
-}
-.side-slider_img::before{
-    width: 33.3%;
-    background-color: #F6D375;
-    z-index: 2;
-}
-.side-slider_img::after{
-    width: 100%;
+.side-slider_pagination{
+    top: unset !important;
+    height: 5px !important;
+    bottom: 2px;
     background-color: #48494F;
 }
+.side-slider .swiper-pagination-progressbar-fill{
+    background-color: #F6D375 !important;
+}
+
 
 .control-section .container{
     flex-direction: row-reverse;
+}
+
+
+@media (max-width:1400px){
+    .side-slider .container{
+        flex-direction: column-reverse;
+    }
+    .side-slider_control{
+        rotate: 270deg;
+        margin: -35px 0;
+    }
+}
+@media (max-width:850px){
+    .side-slider-2{
+        width: 500px;
+        height: 667px;
+    }
+    .side-slider-2 img{
+        width: 500px;
+    }
+    .side-slider_pagination{
+        bottom: 1px;
+    }
+}
+@media (max-width:550px){
+    .side-slider-1{
+        width: 330px;
+        height: 140px;
+        font-size: 16px;
+    }
+    .side-slider-2{
+        width: 330px;
+        height: 440px;
+    }
+    .side-slider-2 img{
+        width: 330px;
+    }
+    .side-slider_pagination{
+        bottom: 0;
+    }    
 }

@@ -17,6 +17,9 @@
     font-weight: 600;
     font-style: 16px;
 }
+.contacts_show-all-2{
+    display: none;
+}
 .contacts-bottom{
     display: flex;
     justify-content: space-between;
@@ -35,4 +38,55 @@
 }
 .our-contacts .social-links_list{
     margin-top: 0;
+}
+
+@media (max-width:1400px){
+    .our-contacts{
+        padding: 60px 0;
+    }
+    .contacts-top{
+        margin-bottom: 30px;
+    }
+    .contacts_show-all{
+        display: none;
+    }
+    .contacts_show-all-2{
+        display: block;
+        margin: 30px auto 0;
+    }
+    .contacts-bottom{
+        flex-direction: column;
+    }
+    .contacts_list{
+        width: fit-content;
+        margin-bottom: 30px;
+    }
+    .contacts_map{
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+@media (max-width:900px){
+    .contacts_main-links{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    .contacts_map{
+        width: 500px;
+    }
+    .contacts_show-all-2{
+        margin-top: 15px;
+    }
+}
+@media (max-width:550px){
+    .contacts-top h2{
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .contacts_list{
+        font-size: 18px;
+    }
+    .contacts_map{
+        width: 330px;
+    }
 }

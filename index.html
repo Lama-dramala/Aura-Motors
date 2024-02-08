@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Motors</title>
+    <!-- Стили swiper slider'a -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+    <!-- Основной файл со всем css'ом -->
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/site-icon.png" type="image/png" />
+    <link rel="shortcut icon" href="img/site-icon.png" type="image/png"/>
 </head>
 <body>
     <header class="header">
@@ -163,25 +166,38 @@
             </div>
         </div>
     </section>
-    <!-- <section class="gallery">
-        <div class="container">
-            <div class="gallery_control">
-                <button id="gallery_prev-btn">
-                    <img src="img/arrow.svg" alt="previous img">
-                </button>
-                <button>
-                    <img src="img/pause-btn.svg" alt="pause">
-                </button>
-                <button id="gallery_next-btn">
-                    <img src="img/arrow.svg" alt="next img">
-                </button>
-                <div class="gallery_line">
-                    <hr class="gallery_line-progress">
-                    <hr class="gallery_line-progress-bar">
+    <section class="main-slider_section">
+        <div id="main-slider" class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Сами слайды -->
+                <div class="swiper-slide">
+                    <div class="main-slider_slide">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main-slider_slide">                      
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main-slider_slide">                      
+                    </div>
                 </div>
             </div>
+            <!-- Управление и прогресбар -->
+            <div class="main-slider_controls">
+                <div id="main-slider_prev">
+                    <img src="img/arrow.svg" alt="previous img">
+                </div>
+                <button id="main-slider_pause">
+                    <img src="img/pause-btn.svg" alt="pause">
+                </button>
+                <div id="main-slider_next">
+                    <img src="img/arrow.svg" alt="nextimg">
+                </div>
+                <div id="main-slider_pagination" class="swiper-pagination"></div>
+            </div>            
         </div>
-    </section> -->
+    </section>
     <section class="colors-showcase">
         <div class="container">
             <div class="colors-note">
@@ -189,44 +205,80 @@
             </div>
             <img src="img/cars-colors-img.png" alt="Car's img" class="colors-img">
             <ul class="colors_list">
-                <li>
-                    <button class="active">Білий</button>
-                </li>
-                <li>
-                    <button>Зелений</button>
-                </li>
-                <li>
-                    <button>Срібний</button>
-                </li>
-                <li>
-                    <button>Чорний</button>
-                </li>
-                <li>
-                    <button>Блакитний</button>
-                </li>
-                <li>
-                    <button>Коричневий</button>
-                </li>
+                <div class="colors_list_col">
+                    <li>
+                        <button class="active">Білий</button>
+                    </li>
+                    <li>
+                        <button>Чорний</button>
+                    </li>
+                </div>
+                <div class="colors_list_col">
+                    <li>
+                        <button>Зелений</button>
+                    </li>
+                    <li>
+                        <button>Блакитний</button>
+                    </li>
+                </div>
+                <div class="colors_list_col">
+                    <li>
+                        <button>Срібний</button>
+                    </li>
+                    <li>
+                        <button>Коричневий</button>
+                    </li>
+                </div>
             </ul>
         </div>
     </section>
-    <!-- <section class="side-slider functions-section">
+    <section class="side-slider functions-section">
         <div class="container">
-            <div class="side-slider_description">
-                Функція <b>Shift-By-Wire</b> дозволяє перемикати передачі простим поворотом циферблата. Елегантний прозорий поворотний циферблат, оздоблений дорогоцінними каменями, забезпечує інтуїтивно зрозуміле керування.
+            <!-- Слайды текста -->
+            <div id="functions_swiper-1" class="swiper side-slider-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            Функція <b>Shift-By-Wire</b> дозволяє перемикати передачі простим поворотом циферблата. Елегантний прозорий поворотний циферблат, оздоблений дорогоцінними каменями, забезпечує інтуїтивно зрозуміле керування.
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            Функція <b>Shift-By-Wire</b> дозволяє перемикати передачі простим поворотом циферблата. Елегантний прозорий поворотний циферблат, оздоблений дорогоцінними каменями, забезпечує інтуїтивно зрозуміле керування.
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            Функція <b>Shift-By-Wire</b> дозволяє перемикати передачі простим поворотом циферблата. Елегантний прозорий поворотний циферблат, оздоблений дорогоцінними каменями, забезпечує інтуїтивно зрозуміле керування.
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Управление слайдером -->
             <div class="side-slider_control">
-                <button class="side-slider_prev-btn">
+                <div id="functions_swiper_prev" class="side-slider_prev">
                     <img src="img/black-arrow.svg" alt="prev">
-                </button>
-                <button class="side-slider_next-btn">
+                </div>
+                <div id="functions_swiper_next" class="side-slider_next">
                     <img src="img/black-arrow.svg" alt="next">
-                </button>
+                </div>
             </div>
-            <div class="side-slider_img">
-                <img src="img/functions-img.png" alt="functions img">
+            <!-- Слайды картинок -->
+            <div id="functions_swiper-2" class="swiper side-slider-2">
+                <div class="swiper-wrapper side-slider_img">
+                    <div class="swiper-slide">
+                        <img src="img/functions-img.png" alt="functions img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/functions-img.png" alt="functions img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/functions-img.png" alt="functions img">
+                    </div>
+                </div>
+                <div id="functions_swiper_pagination" class="swiper-pagination side-slider_pagination"></div>
             </div>
-        </div>
+        </div> 
     </section>
     <section class="car-view">
         <button class="site-btn">
@@ -236,36 +288,68 @@
     </section>
     <section class="side-slider control-section">
         <div class="container">
-            <div class="side-slider_description">
-                <b>Кермування</b> здійснюється легко завдяки високоефективній системі, яка контролює шасі, щоб вирівняти його з drive.⁴
+            <!-- Слайды текста -->
+            <div id="control_swiper-1" class="swiper side-slider-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <b>Кермування</b> здійснюється легко завдяки високоефективній системі, яка контролює шасі, щоб вирівняти його з drive.⁴
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <b>Кермування</b> здійснюється легко завдяки високоефективній системі, яка контролює шасі, щоб вирівняти його з drive.⁴
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <b>Кермування</b> здійснюється легко завдяки високоефективній системі, яка контролює шасі, щоб вирівняти його з drive.⁴
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Управление слайдером -->
             <div class="side-slider_control">
-                <button class="side-slider_prev-btn">
+                <div id="control_swiper_prev" class="side-slider_prev">
                     <img src="img/black-arrow.svg" alt="prev">
-                </button>
-                <button class="side-slider_next-btn">
+                </div>
+                <div id="control_swiper_next" class="side-slider_next">
                     <img src="img/black-arrow.svg" alt="next">
-                </button>
+                </div>
             </div>
-            <div class="side-slider_img">
-                <img src="img/control-sec-img.png" alt="functions img">
+            <!-- Слайды картинок -->
+            <div id="control_swiper-2" class="swiper side-slider-2">
+                <div class="swiper-wrapper side-slider_img">
+                    <div class="swiper-slide">
+                        <img src="img/control-sec-img.png" alt="control img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/control-sec-img.png" alt="control img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/control-sec-img.png" alt="control img">
+                    </div>
+                </div>
+                <div id="control_swiper_pagination" class="swiper-pagination side-slider_pagination"></div>
             </div>
-        </div>
+        </div> 
     </section>
     <section class="car-video"></section>
     <section class="car-selection">
         <div class="container">
             <h2>В наявності GENESIS G80</h2>
             <ul class="car-list">
-                <li class="car-list_item">
+                <li class="car-list_item silver">
                     <div class="car-list_item-title">
                         <img src="img/brand-icon.svg" alt="brand icon">
                         <span><b>GENESIS</b> / Deluxe</span>
                     </div>
-                    <div>2023</div>
+                    <div class="car-list_year">2023</div>
                     <div class="car-list_color silver"></div>
-                    <b class="car-list_price-1">$57 500</b>
-                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_price">
+                        <b class="car-list_price-1">$57 500</b>
+                        <div class="car-list_price-2">2 233 875 грн</div>
+                    </div>
                     <div class="car-list_city">Київ</div>
                     <button class="car-list_fav-btn">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
@@ -274,15 +358,17 @@
                     <button class="site-btn car-list_buy-btn">Замовити</button>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
-                <li class="car-list_item">
+                <li class="car-list_item black">
                     <div class="car-list_item-title">
                         <img src="img/brand-icon.svg" alt="brand icon">
                         <span><b>GENESIS</b> / Deluxe</span>
                     </div>
-                    <div>2023</div>
+                    <div class="car-list_year">2023</div>
                     <div class="car-list_color black"></div>
-                    <b class="car-list_price-1">$57 500</b>
-                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_price">
+                        <b class="car-list_price-1">$57 500</b>
+                        <div class="car-list_price-2">2 233 875 грн</div>
+                    </div>
                     <div class="car-list_city">Дніпро</div>
                     <button class="car-list_fav-btn">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
@@ -291,15 +377,17 @@
                     <button class="site-btn car-list_buy-btn">Замовити</button>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
-                <li class="car-list_item">
+                <li class="car-list_item black">
                     <div class="car-list_item-title">
                         <img src="img/brand-icon.svg" alt="brand icon">
                         <span><b>GENESIS</b> / Deluxe</span>
                     </div>
-                    <div>2023</div>
+                    <div class="car-list_year">2023</div>
                     <div class="car-list_color black"></div>
-                    <b class="car-list_price-1">$57 500</b>
-                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_price">
+                        <b class="car-list_price-1">$57 500</b>
+                        <div class="car-list_price-2">2 233 875 грн</div>
+                    </div>
                     <div class="car-list_city">Дніпро</div>
                     <button class="car-list_fav-btn">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
@@ -308,15 +396,17 @@
                     <button class="site-btn car-list_buy-btn">Замовити</button>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
-                <li class="car-list_item">
+                <li class="car-list_item black">
                     <div class="car-list_item-title">
                         <img src="img/brand-icon.svg" alt="brand icon">
                         <span><b>GENESIS</b> / Deluxe</span>
                     </div>
-                    <div>2023</div>
+                    <div class="car-list_year">2023</div>
                     <div class="car-list_color black"></div>
-                    <b class="car-list_price-1">$57 500</b>
-                    <div class="car-list_price-2">2 233 875 грн</div>
+                    <div class="car-list_price">
+                        <b class="car-list_price-1">$57 500</b>
+                        <div class="car-list_price-2">2 233 875 грн</div>
+                    </div>
                     <div class="car-list_city">Дніпро</div>
                     <button class="car-list_fav-btn">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
@@ -325,15 +415,17 @@
                     <button class="site-btn car-list_buy-btn">Замовити</button>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
-                <li class="car-list_item">
+                <li class="car-list_item red">
                     <div class="car-list_item-title">
                         <img src="img/brand-icon.svg" alt="brand icon">
                         <span><b>GENESIS</b> / Ultimate</span>
                     </div>
-                    <div>2023</div>
+                    <div class="car-list_year">2023</div>
                     <div class="car-list_color red"></div>
-                    <b class="car-list_price-1">$67 900</b>
-                    <div class="car-list_price-2">2 637 915 грн</div>
+                    <div class="car-list_price">
+                        <b class="car-list_price-1">$67 900</b>
+                        <div class="car-list_price-2">2 637 915 грн</div>
+                    </div>
                     <div class="car-list_city">Полтава</div>
                     <button class="car-list_fav-btn">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
@@ -342,15 +434,17 @@
                     <button class="site-btn car-list_buy-btn">Замовити</button>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
-                <li class="car-list_item">
+                <li class="car-list_item silver">
                     <div class="car-list_item-title">
                         <img src="img/brand-icon.svg" alt="brand icon">
                         <span><b>GENESIS</b> / Ultimate</span>
                     </div>
-                    <div>2023</div>
+                    <div class="car-list_year">2023</div>
                     <div class="car-list_color silver"></div>
-                    <b class="car-list_price-1">$67 900</b>
-                    <div class="car-list_price-2">2 637 915 грн</div>
+                    <div class="car-list_price">
+                        <b class="car-list_price-1">$67 900</b>
+                        <div class="car-list_price-2">2 637 915 грн</div>
+                    </div>
                     <div class="car-list_city">Київ</div>
                     <button class="car-list_fav-btn">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
@@ -359,15 +453,17 @@
                     <button class="site-btn car-list_buy-btn">Замовити</button>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
-                <li class="car-list_item">
+                <li class="car-list_item yellow">
                     <div class="car-list_item-title">
                         <img src="img/brand-icon.svg" alt="brand icon">
                         <span><b>GENESIS</b> / Ultimate</span>
                     </div>
-                    <div>2023</div>
+                    <div class="car-list_year">2023</div>
                     <div class="car-list_color yellow"></div>
-                    <b class="car-list_price-1">$67 900</b>
-                    <div class="car-list_price-2">2 637 915 грн</div>
+                    <div class="car-list_price">
+                        <b class="car-list_price-1">$67 900</b>
+                        <div class="car-list_price-2">2 637 915 грн</div>
+                    </div>
                     <div class="car-list_city">Київ</div>
                     <button class="car-list_fav-btn">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
@@ -395,29 +491,33 @@
                 <input type="text" placeholder="Повідомлення" name="Message">
                 <div class="checkbox-wrap">
                     <span>Мені зручно:</span>
-                    <div class="checkbox_item">
-                        <label>
-                            <input type="checkbox" name="phone" checked> 
-                            <span class="label">Телефоном</span>
-                        </label>
+                    <div>
+                        <div class="checkbox_item">
+                            <label>
+                                <input type="checkbox" name="phone" checked>
+                                <span class="label">Телефоном</span>
+                            </label>
+                        </div>
+                        <div class="checkbox_item">
+                            <label>
+                                <input type="checkbox" name="E-mail">
+                                <span class="label">E-mail</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="checkbox_item">
-                        <label>
-                            <input type="checkbox" name="E-mail"> 
-                            <span class="label">E-mail</span>
-                        </label>
-                    </div>
-                    <div class="checkbox_item">
-                        <label>
-                            <input type="checkbox" name="Viber"> 
-                            <span class="label">Viber</span>
-                        </label>
-                    </div>
-                    <div class="checkbox_item">
-                        <label>
-                            <input type="checkbox" name="Telegram" checked> 
-                            <span class="label">Telegram</span>
-                        </label>
+                    <div>
+                        <div class="checkbox_item">
+                            <label>
+                                <input type="checkbox" name="Viber">
+                                <span class="label">Viber</span>
+                            </label>
+                        </div>
+                        <div class="checkbox_item">
+                            <label>
+                                <input type="checkbox" name="Telegram" checked>
+                                <span class="label">Telegram</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="submit-wrap">
@@ -472,7 +572,8 @@
                         </li>
                     </ul>
                 </div>
-                <img src="img/ukraine-map.png" alt="shops map">
+                <img src="img/ukraine-map.png" alt="shops map" class="contacts_map">
+                <a href="#" class="contacts_show-all-2">Всі міста та контакти</a>
             </div>
         </div>
     </section>  
@@ -591,6 +692,10 @@
                 </li>
             </ul>
         </div>
-    </footer> -->
+    </footer>
+    <!-- Скрипты swiper slider'a -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Скрипты самого сайта -->
+    <script src="script.js"></script>
 </body>
 </html>

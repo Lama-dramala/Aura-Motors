@@ -22,3 +22,27 @@
 .footer_links li:hover{
     opacity: 1;
 }
+@media (max-width:1500px){
+    .footer_links{
+        flex-direction: column;
+    }
+    .footer_links li{
+        margin: 0 0 20px 0;
+    }
+}
+@media (max-width:830px){
+    .footer{
+        padding: 30px 0;
+    }
+    .footer .container{
+        flex-direction: column;
+    }
+    .footer .site-logo{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:450px){
+    .footer .container{
+        align-items: start;
+    }
+}

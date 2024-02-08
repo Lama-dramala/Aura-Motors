@@ -5,4 +5,10 @@
     align-items: center;
     background-image: url(../img/car-view-bg.png);
     background-position: center;
+    background-size: cover;
+}
+@media (max-width:900px){
+    .car-view{
+        height: 660px;
+    }
 }

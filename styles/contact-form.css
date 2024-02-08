@@ -39,6 +39,7 @@
 }
 .checkbox_item{
     margin-left: 30px;
+    display: inline-block;
     font-size: 16px;
 }
 .contact-form-section input[type="checkbox"]{
@@ -80,4 +81,53 @@
 .form-section_note-2{
     font-size: 14px;
     width: 360px;
+}
+@media (max-width:950px){
+    .contact-form-section{
+        padding: 60px 0;
+    }
+    .form-section_top{
+        flex-direction: column;
+    }
+    .form-section_top h2{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:725px){
+    .form-section_top{
+        margin-bottom: 30px;
+    }
+    .form-section_top h2{
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .form-section_note-1{
+        width: 330px;
+    }
+    .text-input_wrap{
+        flex-direction: column;
+    }
+    .text-input_wrap input:first-child{
+        margin-right: 0;
+    }
+    .checkbox-wrap{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .checkbox_item{
+        margin: 15px 30px 0 0;
+    }
+    .submit-wrap{
+        width: 330px;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .contact-form-section input[type="submit"]{
+        margin-right: 0;
+    }
+    .form-section_note-2{
+        width: 330px;
+        margin-top: 15px;
+    }
 }
