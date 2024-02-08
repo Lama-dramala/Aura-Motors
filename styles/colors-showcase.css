@@ -1,19 +1,17 @@
 .colors-showcase{
     padding: 160px 0 140px;
+    color: #18181B;
     background: linear-gradient(90deg, #BABABA 0%, #F3F3F3 100%);
 }
 .colors-note{
     width: 360px;
     margin-left: auto;
-    color: #48494F;
     font-size: 14px;
+    opacity: 0.8;
 }
 .colors-img{
     display: block;
     margin: 0 auto;
-}
-.colors_list{
-    color: #18181B;
 }
 .colors_list_col{
     margin-right: 30px;

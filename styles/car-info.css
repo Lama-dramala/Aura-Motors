@@ -130,6 +130,32 @@
 .car-info_expand-btn:hover::after{
     top: 20px;
 }
+
+/* Блок, который появляется только при прокрутке вверх на мобилках */
+.car-info_bottom{
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: -100px;
+    z-index: 10;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.car-info_bottom .container{
+    display: flex;
+    justify-content: space-between;
+}
+.car-info_bottom button{
+    width: 160px;
+    padding: 13px 0;
+    border: 1px solid #18181B;
+}
+.car-info_bottom_buy-btn{
+    background-color: #18181B;
+    color: white;
+}
+
 @media (max-width:1600px){
     .car-info_table_row span{
         width: 170px;
@@ -188,6 +214,12 @@
 @media (max-width:900px){
     .car-info_top_buttons{
         display: none;
+    }
+    .car-info_bottom{
+        display: block;
+    }
+    .car-info_bottom.active{
+        bottom: 0;
     }
 }
 @media (max-width:750px){

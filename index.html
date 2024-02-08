@@ -166,6 +166,12 @@
             </div>
         </div>
     </section>
+    <div class="car-info_bottom">
+        <div class="container">
+            <button class="site-btn car-info_bottom_buy-btn">Замовити</button>
+            <button class="site-btn">14 077+ грн/міс</button>
+        </div>
+    </div>
     <section class="main-slider_section">
         <div id="main-slider" class="swiper">
             <div class="swiper-wrapper">
@@ -188,7 +194,7 @@
                 <div id="main-slider_prev">
                     <img src="img/arrow.svg" alt="previous img">
                 </div>
-                <button id="main-slider_pause">
+                <button id="main-slider_pause" onclick="toggelSliderPause()">
                     <img src="img/pause-btn.svg" alt="pause">
                 </button>
                 <div id="main-slider_next">
@@ -207,26 +213,26 @@
             <ul class="colors_list">
                 <div class="colors_list_col">
                     <li>
-                        <button class="active">Білий</button>
+                        <button class="active" onclick="changeCarColor(0)">Білий</button>
                     </li>
                     <li>
-                        <button>Чорний</button>
-                    </li>
-                </div>
-                <div class="colors_list_col">
-                    <li>
-                        <button>Зелений</button>
-                    </li>
-                    <li>
-                        <button>Блакитний</button>
+                        <button onclick="changeCarColor(1)">Чорний</button>
                     </li>
                 </div>
                 <div class="colors_list_col">
                     <li>
-                        <button>Срібний</button>
+                        <button onclick="changeCarColor(2)">Зелений</button>
                     </li>
                     <li>
-                        <button>Коричневий</button>
+                        <button onclick="changeCarColor(3)">Блакитний</button>
+                    </li>
+                </div>
+                <div class="colors_list_col">
+                    <li>
+                        <button onclick="changeCarColor(4)">Срібний</button>
+                    </li>
+                    <li>
+                        <button onclick="changeCarColor(5)">Коричневий</button>
                     </li>
                 </div>
             </ul>
