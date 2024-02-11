@@ -34,6 +34,9 @@
     width: 750px;
     height: 1005px;
 }
+.side-slider-2 img{
+    width: 750px;
+}
 .side-slider_pagination{
     top: unset !important;
     height: 5px !important;
@@ -58,8 +61,6 @@
         rotate: 270deg;
         margin: -35px 0;
     }
-}
-@media (max-width:850px){
     .side-slider-2{
         width: 500px;
         height: 667px;

@@ -9,6 +9,9 @@ html{
     color: white;
     font-size: 18px;
 }
+section{
+    scroll-margin-top: 80px;
+}
 .container{
     max-width: 1530px;
     margin: 0 auto;
@@ -23,6 +26,8 @@ html{
     border: 1px solid white;
     border-radius: 24px;
     transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
 }
 /* Ховеры */
 a{
@@ -31,18 +36,19 @@ a{
 a:hover{
     color: #F6D375;
 }
-a:focus{
+a:active{
     color: #BFAA70;
 }
 .site-btn:hover{
     background-color: #F6D375;
     border: 1px solid #F6D375;
+    color: #18181B;
 }
-.site-btn:focus{
+.site-btn:active{
     background-color: #BFAA70;
     border: 1px solid #BFAA70;
 }
-.site-logo:hover, .site-logo:focus{
+.site-logo:hover, .site-logo:active{
     color: unset;
     text-decoration: none;
 }

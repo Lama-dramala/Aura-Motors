@@ -1,0 +1,17 @@
+#panorama {
+    width: 100%;
+    height: 1000px;
+    overflow:hidden;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 16px 20px rgba(0,0,0,0.2);
+}
+#panorama div {
+    position:absolute;
+    user-select: none;
+    overflow:hidden;  
+}
+@media (max-width:900px){
+    #panorama{
+        height: 660px;
+    }
+}

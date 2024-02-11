@@ -18,32 +18,20 @@
                 <div class="header_info_right">
                     <ul class="header_info">
                         <li>
-                            <a href="#">Місто: Київ - Центр</a>
+                            <a href="https://www.google.com.ua/maps/search/Kyiv+center/@50.4341844,30.4734935,13z/data=!3m1!4b1?entry=ttu" target="_blank">Місто: Київ - Центр</a>
                         </li>
                         <li>
                             <span>
                                 <a href="tel:0 800 320 555">0 800 320 555</a>
-                                <button><img src="img/arrow.svg" alt=""></button>
                             </span>
                         </li>
                         <li>
-                            <a href="#">Зв'язатися з нами</a>
+                            <a href="#our-contacts">Зв'язатися з нами</a>
                         </li>
                     </ul>
-                    <div class="header_functional">
-                        <button class="header_lang-btn">
-                            <img src="img/ua-flag.svg" alt="Change lang">
-                        </button>
-                        <button>
-                            <img src="img/search-icon.svg" alt="Search">
-                        </button>
-                        <button>
-                            <img src="img/scales-icon.svg" alt="Bargain">
-                        </button>
-                        <button class="header_menu-btn">
-                            <div class="header_menu-icon"></div>
-                        </button>
-                    </div>
+                    <button class="header_menu-btn" onclick="toggleBreadcrumbs()">
+                        <div class="header_menu-icon"></div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -78,28 +66,28 @@
         <div class="container">
             <ul class="car-info-tabs">
                 <li>
-                    <button class="active">Основна інформація</button>
+                    <a class="active" href="#car-info">Основна інформація</a>
                 </li>
                 <li>
-                    <button>Комплектація</button>
+                    <a href="#main-slider_section">Галерея</a>
                 </li>
                 <li>
-                    <button>Технічні характеристики</button>
+                    <a href="#car-selection">В наявності</a>
                 </li>
                 <li>
-                    <button>Галерея</button>
+                    <a href="#contact-form-section">Зв'язатися з нами</a>
                 </li>
             </ul>
             <div class="car-info_top_buttons">
-                <button class="site-btn">Замовити</button>
-                <button class="site-btn car-info_credit-btn">Від 14 077 грн/міс</button>
+                <a class="site-btn" href="#contact-form-section">Замовити</a>
+                <a class="site-btn car-info_credit-btn" href="#contact-form-section">Від 14 077 грн/міс</a>
             </div>
         </div>
     </div>
-    <section class="car-info">
+    <section class="car-info" id="car-info" data-tab-index="0">
         <div class="container">
             <div class="car-info_content">
-                <div class="car-info_content_top">
+                <div class="car-info_content_top" id="car-info_content_top">
                     <div class="car-info_description">
                         <h4>GENESIS G80</h4>
                         <span>
@@ -160,32 +148,32 @@
                         </div>
                     </div>
                 </div>
-                <button class="car-info_expand-btn">
+                <a class="car-info_expand-btn" href="#car-selection">
                     Дивитись усі
-                </button>
+                </a>
             </div>
         </div>
     </section>
     <div class="car-info_bottom">
         <div class="container">
-            <button class="site-btn car-info_bottom_buy-btn">Замовити</button>
-            <button class="site-btn">14 077+ грн/міс</button>
+            <a class="site-btn car-info_bottom_buy-btn" href="#contact-form-section">Замовити</a>
+            <a class="site-btn" href="#contact-form-section">14 077+ грн/міс</a>
         </div>
     </div>
-    <section class="main-slider_section">
+    <section class="main-slider_section" id="main-slider_section" data-tab-index="1">
         <div id="main-slider" class="swiper">
             <div class="swiper-wrapper">
                 <!-- Сами слайды -->
                 <div class="swiper-slide">
-                    <div class="main-slider_slide">
+                    <div class="main-slider_slide-1">
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="main-slider_slide">                      
+                    <div class="main-slider_slide-2">                      
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="main-slider_slide">                      
+                    <div class="main-slider_slide-3">                      
                     </div>
                 </div>
             </div>
@@ -195,16 +183,18 @@
                     <img src="img/arrow.svg" alt="previous img">
                 </div>
                 <button id="main-slider_pause" onclick="toggelSliderPause()">
-                    <img src="img/pause-btn.svg" alt="pause">
+                    <!-- <img src="img/pause-btn.svg" alt="pause" class="main-slider_pause-icon active"> -->
+                    <div class="main-slider_pause-icon active"></div>
+                    <div class="main-slider_play-icon"></div>
                 </button>
                 <div id="main-slider_next">
-                    <img src="img/arrow.svg" alt="nextimg">
+                    <img src="img/arrow.svg" alt="next img">
                 </div>
                 <div id="main-slider_pagination" class="swiper-pagination"></div>
             </div>            
         </div>
     </section>
-    <section class="colors-showcase">
+    <section class="colors-showcase" id="colors-showcase">
         <div class="container">
             <div class="colors-note">
                 *Зображення наведено лише для ілюстрації, кольори можуть відрізнятися залежно від дисплея та роздільної здатності. 
@@ -238,7 +228,7 @@
             </ul>
         </div>
     </section>
-    <section class="side-slider functions-section">
+    <section class="side-slider functions-section" id="functions-section">
         <div class="container">
             <!-- Слайды текста -->
             <div id="functions_swiper-1" class="swiper side-slider-1">
@@ -250,12 +240,12 @@
                     </div>
                     <div class="swiper-slide">
                         <div>
-                            Функція <b>Shift-By-Wire</b> дозволяє перемикати передачі простим поворотом циферблата. Елегантний прозорий поворотний циферблат, оздоблений дорогоцінними каменями, забезпечує інтуїтивно зрозуміле керування.
+                            <b>Спортивне рульове колесо з D-подібним вирізом</b> розроблено спеціально для G80 5рогt, щоб надати йому більш спортивного вигляду.
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div>
-                            Функція <b>Shift-By-Wire</b> дозволяє перемикати передачі простим поворотом циферблата. Елегантний прозорий поворотний циферблат, оздоблений дорогоцінними каменями, забезпечує інтуїтивно зрозуміле керування.
+                            <b>Центральна панель</b> - витончена та сучасна, вона легко розміщує необхідні елементи керування в межах досяжності руки.
                         </div>
                     </div>
                 </div>
@@ -276,23 +266,18 @@
                         <img src="img/functions-img.png" alt="functions img">
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/functions-img.png" alt="functions img">
+                        <img src="img/functions-img-2.png" alt="functions img">
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/functions-img.png" alt="functions img">
+                        <img src="img/functions-img-3.png" alt="functions img">
                     </div>
                 </div>
                 <div id="functions_swiper_pagination" class="swiper-pagination side-slider_pagination"></div>
             </div>
         </div> 
     </section>
-    <section class="car-view">
-        <button class="site-btn">
-            <img src="img/car-view-icon.svg">
-            Інтер’єр 360
-        </button>
-    </section>
-    <section class="side-slider control-section">
+    <div id="panorama"></div>
+    <section class="side-slider control-section" id="control-section" data-tab-index="1">
         <div class="container">
             <!-- Слайды текста -->
             <div id="control_swiper-1" class="swiper side-slider-1">
@@ -304,12 +289,12 @@
                     </div>
                     <div class="swiper-slide">
                         <div>
-                            <b>Кермування</b> здійснюється легко завдяки високоефективній системі, яка контролює шасі, щоб вирівняти його з drive.⁴
+                            <b>Центральна панель</b> - витончена та сучасна, вона легко розміщує необхідні елементи керування в межах досяжності руки.
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div>
-                            <b>Кермування</b> здійснюється легко завдяки високоефективній системі, яка контролює шасі, щоб вирівняти його з drive.⁴
+                            <b>Спортивне рульове колесо з D-подібним вирізом</b> розроблено спеціально для G80 5рогt, щоб надати йому більш спортивного вигляду.
                         </div>
                     </div>
                 </div>
@@ -330,18 +315,17 @@
                         <img src="img/control-sec-img.png" alt="control img">
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/control-sec-img.png" alt="control img">
+                        <img src="img/functions-img-3.png" alt="control img">
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/control-sec-img.png" alt="control img">
+                        <img src="img/functions-img-2.png" alt="control img">
                     </div>
                 </div>
                 <div id="control_swiper_pagination" class="swiper-pagination side-slider_pagination"></div>
             </div>
         </div> 
     </section>
-    <section class="car-video"></section>
-    <section class="car-selection">
+    <section class="car-selection" id="car-selection" data-tab-index="2">
         <div class="container">
             <h2>В наявності GENESIS G80</h2>
             <ul class="car-list">
@@ -357,11 +341,11 @@
                         <div class="car-list_price-2">2 233 875 грн</div>
                     </div>
                     <div class="car-list_city">Київ</div>
-                    <button class="car-list_fav-btn">
+                    <button class="car-list_fav-btn" onclick="addBookmark(this)">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
                         <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
                     </button>
-                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a class="site-btn car-list_buy-btn" href="#contact-form-section">Замовити</a>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
                 <li class="car-list_item black">
@@ -376,11 +360,11 @@
                         <div class="car-list_price-2">2 233 875 грн</div>
                     </div>
                     <div class="car-list_city">Дніпро</div>
-                    <button class="car-list_fav-btn">
+                    <button class="car-list_fav-btn" onclick="addBookmark(this)">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
                         <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
                     </button>
-                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a class="site-btn car-list_buy-btn" href="#contact-form-section">Замовити</a>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
                 <li class="car-list_item black">
@@ -395,11 +379,11 @@
                         <div class="car-list_price-2">2 233 875 грн</div>
                     </div>
                     <div class="car-list_city">Дніпро</div>
-                    <button class="car-list_fav-btn">
+                    <button class="car-list_fav-btn active" onclick="addBookmark(this)">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
                         <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
                     </button>
-                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a class="site-btn car-list_buy-btn" href="#contact-form-section">Замовити</a>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
                 <li class="car-list_item black">
@@ -414,11 +398,11 @@
                         <div class="car-list_price-2">2 233 875 грн</div>
                     </div>
                     <div class="car-list_city">Дніпро</div>
-                    <button class="car-list_fav-btn">
+                    <button class="car-list_fav-btn" onclick="addBookmark(this)">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
                         <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
                     </button>
-                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a class="site-btn car-list_buy-btn" href="#contact-form-section">Замовити</a>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
                 <li class="car-list_item red">
@@ -433,11 +417,11 @@
                         <div class="car-list_price-2">2 637 915 грн</div>
                     </div>
                     <div class="car-list_city">Полтава</div>
-                    <button class="car-list_fav-btn">
+                    <button class="car-list_fav-btn active" onclick="addBookmark(this)">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
                         <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
                     </button>
-                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a class="site-btn car-list_buy-btn" href="#contact-form-section">Замовити</a>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
                 <li class="car-list_item silver">
@@ -452,11 +436,11 @@
                         <div class="car-list_price-2">2 637 915 грн</div>
                     </div>
                     <div class="car-list_city">Київ</div>
-                    <button class="car-list_fav-btn">
+                    <button class="car-list_fav-btn" onclick="addBookmark(this)">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
                         <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
                     </button>
-                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a class="site-btn car-list_buy-btn" href="#contact-form-section">Замовити</a>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
                 <li class="car-list_item yellow">
@@ -471,17 +455,17 @@
                         <div class="car-list_price-2">2 637 915 грн</div>
                     </div>
                     <div class="car-list_city">Київ</div>
-                    <button class="car-list_fav-btn">
+                    <button class="car-list_fav-btn" onclick="addBookmark(this)">
                         <img src="img/bookmark-icon.svg" alt="Add to Favorite">
                         <img src="img/bookmark-icon-2.svg" alt="Add to Favorite">
                     </button>
-                    <button class="site-btn car-list_buy-btn">Замовити</button>
+                    <a class="site-btn car-list_buy-btn" href="#contact-form-section">Замовити</a>
                     <a href="#" class="car-list_link">Детальніше</a>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="contact-form-section">
+    <section class="contact-form-section" id="contact-form-section" data-tab-index="3">
         <div class="container">
             <div class="form-section_top">
                 <h2>Зв'язатися з нами</h2>
@@ -535,7 +519,7 @@
             </form>
         </div>
     </section>
-    <section class="our-contacts">
+    <section class="our-contacts" id="our-contacts">
         <div class="container">
             <div class="contacts-top">
                 <h2>Наші контакти</h2>
@@ -547,31 +531,31 @@
                     <a href="mailto:@auramotors.com" class="contacts_main-links">mail@auramotors.com</a>
                     <ul class="social-links_list">
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/" target="_blank">
                                 <img src="img/social/facebook-icon.svg" alt="facebook">
                                 <img src="img/social/facebook-icon-2.svg" alt="facebook">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/" target="_blank">
                                 <img src="img/social/Inst-icon.svg" alt="instagram">
                                 <img src="img/social/Inst-icon-2.svg" alt="instagram">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://web.telegram.org/k/" target="_blank">
                                 <img src="img/social/tg-icon.svg" alt="telegram">
                                 <img src="img/social/tg-icon-2.svg" alt="telegram">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.tiktok.com/ru-RU/" target="_blank">
                                 <img src="img/social/tik-tok-icon.svg" alt="tik-tok">
                                 <img src="img/social/tik-tok-icon-2.svg" alt="tik-tok">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.youtube.com/" target="_blank">
                                 <img src="img/social/youtube-icon.svg" alt="youtube">
                                 <img src="img/social/youtube-icon-2.svg" alt="youtube">
                             </a>
@@ -644,31 +628,31 @@
                 </span>
                 <ul class="social-links_list">
                     <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/" target="_blank">
                             <img src="img/social/facebook-icon.svg" alt="facebook">
                             <img src="img/social/facebook-icon-2.svg" alt="facebook">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/" target="_blank">
                             <img src="img/social/Inst-icon.svg" alt="instagram">
                             <img src="img/social/Inst-icon-2.svg" alt="instagram">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://web.telegram.org/k/" target="_blank">
                             <img src="img/social/tg-icon.svg" alt="telegram">
                             <img src="img/social/tg-icon-2.svg" alt="telegram">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.tiktok.com/ru-RU/" target="_blank">
                             <img src="img/social/tik-tok-icon.svg" alt="tik-tok">
                             <img src="img/social/tik-tok-icon-2.svg" alt="tik-tok">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/" target="_blank">
                             <img src="img/social/youtube-icon.svg" alt="youtube">
                             <img src="img/social/youtube-icon-2.svg" alt="youtube">
                         </a>
@@ -699,6 +683,8 @@
             </ul>
         </div>
     </footer>
+    <!-- Скрипты панорамы -->
+    <script src="gsap.min.js"></script>    
     <!-- Скрипты swiper slider'a -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Скрипты самого сайта -->

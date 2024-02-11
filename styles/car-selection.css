@@ -86,20 +86,25 @@
     border-radius: 50%;
     transition: 0.3s;
 }
-.car-list_fav-btn img:last-child{
-    display: none;
+.car-list_fav-btn.active{
+    background-color: #F6D375;
+    border-color: #F6D375;    
 }
 .car-list_fav-btn:hover{
     background-color: #F6D375;
     border-color: #F6D375;
 }
-.car-list_fav-btn:focus{
+.car-list_fav-btn:active{
     background-color: #BFAA70;
     border-color: #BFAA70;
 }
-.car-list_fav-btn:hover img:first-child{
+.car-list_fav-btn img:last-child{
     display: none;
-}.car-list_fav-btn:hover img:last-child{
+}
+.car-list_fav-btn.active img:first-child{
+    display: none;
+}
+.car-list_fav-btn.active img:last-child{
     display: block;
 }
 .car-list_buy-btn{
