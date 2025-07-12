@@ -8,13 +8,13 @@
     background-size: cover;
 }
 .main-slider_slide-1{
-    background-image: url(../img/main-gallery-img-1.png);
+    background-image: url(../img/main-gallery-img-1.jpg);
 }
 .main-slider_slide-2{
-    background-image: url(../img/main-gallery-img-2.png);
+    background-image: url(../img/main-gallery-img-2.jpg);
 }
 .main-slider_slide-3{
-    background-image: url(../img/main-gallery-img-3.png);
+    background-image: url(../img/main-gallery-img-3.jpg);
 }
 .main-slider_controls{
     width: 1500px;
